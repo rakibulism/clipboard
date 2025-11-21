@@ -39,6 +39,27 @@ struct ContentView: View {
                             .onTapGesture {
                                 pasteItem(item)
                             }
+                            .contextMenu {
+                                Button {
+                                    pasteItem(item)
+                                } label: {
+                                    Label("Copy to Clipboard", systemImage: "doc.on.doc")
+                                }
+                                
+                                Button {
+                                    togglePin(item)
+                                } label: {
+                                    Label(item.isPinned ? "Unpin" : "Pin", systemImage: item.isPinned ? "pin.slash" : "pin")
+                                }
+                                
+                                Divider()
+                                
+                                Button(role: .destructive) {
+                                    deleteItem(item)
+                                } label: {
+                                    Label("Delete", systemImage: "trash")
+                                }
+                            }
                     }
                 }
                 .padding()
@@ -59,6 +80,14 @@ struct ContentView: View {
         // but ideally we automate this).
         // For now, we just put it back on top of clipboard so user can paste.
         print("Copied to clipboard: \(item.content)")
+    }
+    
+    private func togglePin(_ item: ClipboardItem) {
+        item.isPinned.toggle()
+    }
+    
+    private func deleteItem(_ item: ClipboardItem) {
+        modelContext.delete(item)
     }
 }
 
