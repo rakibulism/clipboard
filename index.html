@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Dev | Creative Developer</title>
+    <meta name="description" content="Portfolio of Alex Dev, a creative developer building premium digital experiences.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Alex.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact" class="btn-primary">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="title">Alex <span class="highlight">Dev</span></h1>
+                <p class="subtitle">I build <span id="typing-text"></span></p>
+                <div class="cta-group">
+                    <a href="#work" class="btn-primary">View Work</a>
+                    <a href="#contact" class="btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="gradient-sphere"></div>
+                <div class="glass-card">
+                    <div class="code-snippet">
+                        <pre><code>const createMagic = () => {
+  return "✨";
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I'm a passionate developer who bridges the gap between design and engineering. I don't just write code; I craft experiences that feel alive.</p>
+                        <p>With a focus on performance and accessibility, I ensure that every pixel serves a purpose.</p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>5+</h3>
+                            <p>Years Exp.</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>50+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>100%</h3>
+                            <p>Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="section">
+            <div class="container">
+                <h2 class="section-title">Selected Work</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image" style="background: linear-gradient(45deg, #ff6b6b, #feca57);"></div>
+                        <div class="project-info">
+                            <h3>Neon Dashboard</h3>
+                            <p>A futuristic analytics platform.</p>
+                            <a href="#" class="link-arrow">View Project &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image" style="background: linear-gradient(45deg, #54a0ff, #5f27cd);"></div>
+                        <div class="project-info">
+                            <h3>E-Commerce Pro</h3>
+                            <p>High-performance shopping experience.</p>
+                            <a href="#" class="link-arrow">View Project &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image" style="background: linear-gradient(45deg, #48dbfb, #1dd1a1);"></div>
+                        <div class="project-info">
+                            <h3>AI Chat Interface</h3>
+                            <p>Conversational UI design system.</p>
+                            <a href="#" class="link-arrow">View Project &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-container">
+                <div class="contact-content">
+                    <h2 class="section-title">Let's Create Together</h2>
+                    <p>Have a project in mind? Let's turn your vision into reality.</p>
+                    <a href="mailto:hello@alex.dev" class="btn-primary btn-large">Say Hello</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 Alex Dev. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
