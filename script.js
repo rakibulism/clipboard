@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Typing Effect
     const textElement = document.getElementById('typing-text');
-    const phrases = ['digital experiences.', 'web applications.', 'user interfaces.', 'the future.'];
+    const phrases = ['excellence.', 'innovation.', 'quality.', 'results.'];
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function type() {
         const currentPhrase = phrases[phraseIndex];
-        
+
         if (isDeleting) {
             textElement.textContent = currentPhrase.substring(0, charIndex - 1);
             charIndex--;
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     // Note: CSS for mobile menu overlay would be needed for full functionality, 
     // but this is a placeholder for the interaction logic.
-    if(hamburger) {
+    if (hamburger) {
         hamburger.addEventListener('click', () => {
             // Toggle logic would go here
             console.log('Menu toggled');
