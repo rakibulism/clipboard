@@ -7,6 +7,7 @@ A tiny menu-bar clipboard that keeps the context of every copy.
 - **Context Visualization**: See the source app and type of every clip.
 - **Smart Tagging**: Auto-tags links, code, and emails.
 - **Timeline View**: A clean, scrollable history of your clipboard.
+- **Quick Actions**: Right-click to **Pin** important items or **Delete** sensitive ones.
 - **Native Performance**: Built with SwiftUI and SwiftData.
 
 ## 🚀 Running the App
